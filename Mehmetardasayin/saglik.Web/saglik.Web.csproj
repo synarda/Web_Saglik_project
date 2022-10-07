@@ -1,0 +1,351 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C9AFD6A-BDA3-46CF-BFA2-418AF4801522}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>saglik.Web</RootNamespace>
+    <AssemblyName>saglik.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44314</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Resource\contact.html" />
+    <Content Include="Resource\css\animate.css" />
+    <Content Include="Resource\css\bootstrap-datepicker.min.css" />
+    <Content Include="Resource\css\bootstrap.css" />
+    <Content Include="Resource\css\flexslider.css" />
+    <Content Include="Resource\css\icomoon.css" />
+    <Content Include="Resource\css\magnific-popup.css" />
+    <Content Include="Resource\css\owl.carousel.min.css" />
+    <Content Include="Resource\css\owl.theme.default.min.css" />
+    <Content Include="Resource\css\style.css" />
+    <Content Include="Resource\css\themify-icons.css" />
+    <Content Include="Resource\destination.html" />
+    <Content Include="Resource\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Resource\fonts\icomoon\icomoon.svg" />
+    <Content Include="Resource\fonts\themify-icons\themify.svg" />
+    <Content Include="Resource\images\img_1.jpg" />
+    <Content Include="Resource\images\img_2.jpg" />
+    <Content Include="Resource\images\img_3.jpg" />
+    <Content Include="Resource\images\img_4.jpg" />
+    <Content Include="Resource\images\img_5.jpg" />
+    <Content Include="Resource\images\img_6.jpg" />
+    <Content Include="Resource\images\img_bg_1.jpg" />
+    <Content Include="Resource\images\img_bg_2.jpg" />
+    <Content Include="Resource\images\img_bg_3.jpg" />
+    <Content Include="Resource\images\loader.gif" />
+    <Content Include="Resource\index.html" />
+    <Content Include="Resource\js\bootstrap-datepicker.min.js" />
+    <Content Include="Resource\js\bootstrap.min.js" />
+    <Content Include="Resource\js\google_map.js" />
+    <Content Include="Resource\js\jquery.countTo.js" />
+    <Content Include="Resource\js\jquery.easing.1.3.js" />
+    <Content Include="Resource\js\jquery.easypiechart.min.js" />
+    <Content Include="Resource\js\jquery.magnific-popup.min.js" />
+    <Content Include="Resource\js\jquery.min.js" />
+    <Content Include="Resource\js\jquery.stellar.min.js" />
+    <Content Include="Resource\js\jquery.waypoints.min.js" />
+    <Content Include="Resource\js\magnific-popup-options.js" />
+    <Content Include="Resource\js\main.js" />
+    <Content Include="Resource\js\modernizr-2.6.2.min.js" />
+    <Content Include="Resource\js\owl.carousel.min.js" />
+    <Content Include="Resource\js\respond.min.js" />
+    <Content Include="Resource\pricing.html" />
+    <Content Include="Resource\README.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Resource\.DS_Store" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_alerts.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_background-variant.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_border-radius.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_buttons.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_center-block.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_clearfix.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_forms.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_gradients.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_grid-framework.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_grid.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_hide-text.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_image.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_labels.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_list-group.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_nav-divider.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_nav-vertical-align.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_opacity.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_pagination.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_panels.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_progress-bar.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_reset-filter.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_reset-text.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_resize.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_responsive-visibility.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_size.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_tab-focus.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_table-row.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_text-emphasis.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_text-overflow.scssc" />
+    <Content Include="Resource\.sass-cache\1312249659bbfaed97ebc9c4fe4615ab409979f2\_vendor-prefixes.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_alerts.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_badges.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_breadcrumbs.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_button-groups.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_buttons.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_carousel.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_close.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_code.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_component-animations.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_dropdowns.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_forms.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_grid.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_input-groups.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_jumbotron.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_labels.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_list-group.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_media.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_mixins.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_modals.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_navbar.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_navs.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_normalize.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_pager.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_pagination.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_panels.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_popovers.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_print.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_progress-bars.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_responsive-embed.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_responsive-utilities.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_scaffolding.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_tables.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_thumbnails.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_tooltip.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_type.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_utilities.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_variables.scssc" />
+    <Content Include="Resource\.sass-cache\c131d579e72184e91f426d1f22b65b5f0ae1d20f\_wells.scssc" />
+    <Content Include="Resource\.sass-cache\c578ac96aea90b3ef48d5ddbbb0ad284ee4fb7fd\bootstrap.scssc" />
+    <Content Include="Resource\.sass-cache\c578ac96aea90b3ef48d5ddbbb0ad284ee4fb7fd\style.scssc" />
+    <Content Include="Resource\css\.DS_Store" />
+    <Content Include="Resource\css\bootstrap.css.map" />
+    <Content Include="Resource\css\style.css.map" />
+    <Content Include="Resource\fonts\.DS_Store" />
+    <Content Include="Resource\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="Resource\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="Resource\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="Resource\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="Resource\fonts\icomoon\icomoon.eot" />
+    <Content Include="Resource\fonts\icomoon\icomoon.ttf" />
+    <Content Include="Resource\fonts\icomoon\icomoon.woff" />
+    <Content Include="Resource\fonts\themify-icons\themify.eot" />
+    <Content Include="Resource\fonts\themify-icons\themify.ttf" />
+    <Content Include="Resource\fonts\themify-icons\themify.woff" />
+    <Content Include="Resource\images\.DS_Store" />
+    <Content Include="Resource\js\.DS_Store" />
+    <Content Include="Resource\sass\.DS_Store" />
+    <Content Include="Resource\sass\bootstrap.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Resource\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Resource\sass\bootstrap\_alerts.scss" />
+    <Content Include="Resource\sass\bootstrap\_badges.scss" />
+    <Content Include="Resource\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Resource\sass\bootstrap\_button-groups.scss" />
+    <Content Include="Resource\sass\bootstrap\_buttons.scss" />
+    <Content Include="Resource\sass\bootstrap\_carousel.scss" />
+    <Content Include="Resource\sass\bootstrap\_close.scss" />
+    <Content Include="Resource\sass\bootstrap\_code.scss" />
+    <Content Include="Resource\sass\bootstrap\_component-animations.scss" />
+    <Content Include="Resource\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="Resource\sass\bootstrap\_forms.scss" />
+    <Content Include="Resource\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="Resource\sass\bootstrap\_grid.scss" />
+    <Content Include="Resource\sass\bootstrap\_input-groups.scss" />
+    <Content Include="Resource\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="Resource\sass\bootstrap\_labels.scss" />
+    <Content Include="Resource\sass\bootstrap\_list-group.scss" />
+    <Content Include="Resource\sass\bootstrap\_media.scss" />
+    <Content Include="Resource\sass\bootstrap\_mixins.scss" />
+    <Content Include="Resource\sass\bootstrap\_modals.scss" />
+    <Content Include="Resource\sass\bootstrap\_navbar.scss" />
+    <Content Include="Resource\sass\bootstrap\_navs.scss" />
+    <Content Include="Resource\sass\bootstrap\_normalize.scss" />
+    <Content Include="Resource\sass\bootstrap\_pager.scss" />
+    <Content Include="Resource\sass\bootstrap\_pagination.scss" />
+    <Content Include="Resource\sass\bootstrap\_panels.scss" />
+    <Content Include="Resource\sass\bootstrap\_popovers.scss" />
+    <Content Include="Resource\sass\bootstrap\_print.scss" />
+    <Content Include="Resource\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="Resource\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="Resource\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Resource\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="Resource\sass\bootstrap\_tables.scss" />
+    <Content Include="Resource\sass\bootstrap\_theme.scss" />
+    <Content Include="Resource\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="Resource\sass\bootstrap\_tooltip.scss" />
+    <Content Include="Resource\sass\bootstrap\_type.scss" />
+    <Content Include="Resource\sass\bootstrap\_utilities.scss" />
+    <Content Include="Resource\sass\bootstrap\_variables.scss" />
+    <Content Include="Resource\sass\bootstrap\_wells.scss" />
+    <Content Include="Resource\sass\style.scss" />
+    <Content Include="Resource\sass\_bootstrap-compass.scss" />
+    <Content Include="Resource\sass\_bootstrap-mincer.scss" />
+    <Content Include="Resource\sass\_bootstrap-sprockets.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\saglik.Business\saglik.Business.csproj">
+      <Project>{9d385655-9e27-45bd-b85c-d8429e5ed610}</Project>
+      <Name>saglik.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\saglik.DataAccess\saglik.DataAccess.csproj">
+      <Project>{8550188c-e154-4410-9926-a8f42f1ecb55}</Project>
+      <Name>saglik.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58357</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

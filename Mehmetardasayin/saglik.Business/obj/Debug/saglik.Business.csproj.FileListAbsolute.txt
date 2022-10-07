@@ -1,0 +1,6 @@
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.Business\bin\Debug\saglik.Business.dll
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.Business\bin\Debug\saglik.Business.pdb
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.Business\obj\Debug\saglik.Business.csprojAssemblyReference.cache
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.Business\obj\Debug\saglik.Business.csproj.CoreCompileInputs.cache
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.Business\obj\Debug\saglik.Business.dll
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.Business\obj\Debug\saglik.Business.pdb

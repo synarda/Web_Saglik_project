@@ -1,0 +1,6 @@
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.DataAccess\bin\Debug\saglik.DataAccess.dll
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.DataAccess\bin\Debug\saglik.DataAccess.pdb
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.DataAccess\obj\Debug\saglik.DataAccess.csprojAssemblyReference.cache
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.DataAccess\obj\Debug\saglik.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.DataAccess\obj\Debug\saglik.DataAccess.dll
+C:\Users\ardas\source\repos\Mehmetardasayin\saglik.DataAccess\obj\Debug\saglik.DataAccess.pdb
